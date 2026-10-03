@@ -1,0 +1,282 @@
+{
+ "cell_id": {
+  "name": "cell_id",
+  "description": "the cell",
+  "unit": "identifier",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "cell_id_local": {
+  "name": "cell_id_local",
+  "description": "the cell's column in the custodian file",
+  "unit": "text",
+  "provenance": "custodian file header",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "ageing_hours": {
+  "name": "ageing_hours",
+  "description": "operating hours at the checkpoint, the custodian's file-name label",
+  "unit": "h",
+  "provenance": "custodian file name",
+  "dtype_observed": "int64",
+  "n_null": 0
+ },
+ "checkpoint_kind": {
+  "name": "checkpoint_kind",
+  "description": "ageing, or recovery_event for a file the custodian names _afterAirAirStart (the curve after a passive air/air start-up)",
+  "unit": "categorical",
+  "provenance": "custodian file name",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "source_file": {
+  "name": "source_file",
+  "description": "the custodian file",
+  "unit": "text",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "hold_index": {
+  "name": "hold_index",
+  "description": "the order of the hold within the custodian file; a set point can be visited more than once, so (cell_id, source_file, hold_index) is the row key",
+  "unit": "ordinal",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "int64",
+  "n_null": 0
+ },
+ "set_point_A": {
+  "name": "set_point_A",
+  "description": "the stack current set point of the hold (I.S.set)",
+  "unit": "A",
+  "provenance": "custodian column I.S.set",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "direction": {
+  "name": "direction",
+  "description": "descending or ascending: the sign of the change from the previous set point; first for the opening hold",
+  "unit": "text",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "hold_dwell_s": {
+  "name": "hold_dwell_s",
+  "description": "duration of the contiguous I.S.set segment (the hold); segments under 30 s are ramp steps and are not released (their count per file is in counts.json zsw_holds)",
+  "unit": "s",
+  "provenance": "custodian clock",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "n_samples_last_30s": {
+  "name": "n_samples_last_30s",
+  "description": "samples in the last 30 s of the hold, over which the means are taken",
+  "unit": "count",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "int64",
+  "n_null": 0
+ },
+ "current_density_A_cm2": {
+  "name": "current_density_A_cm2",
+  "description": "mean over the last 30 s of the hold",
+  "unit": "A/cm2",
+  "provenance": "custodian column j.S.act",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "cell_voltage_V": {
+  "name": "cell_voltage_V",
+  "description": "mean over the last 30 s of the hold",
+  "unit": "V",
+  "provenance": "custodian column U<n>",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "voltage_spread_last_30s_V": {
+  "name": "voltage_spread_last_30s_V",
+  "description": "max minus min cell voltage over the last 30 s",
+  "unit": "V",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "voltage_deviation_last_120s_V": {
+  "name": "voltage_deviation_last_120s_V",
+  "description": "largest absolute deviation of the cell voltage from its mean over the last 120 s of the hold (the hold itself where shorter), rounded to 0.1 mV; the flag is computed from this rounded value",
+  "unit": "V",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "stable_pm5mV_over_last_120s": {
+  "name": "stable_pm5mV_over_last_120s",
+  "description": "True when voltage_deviation_last_120s_V is 5 mV or less: the JRC Appendix E criterion (+/-5 mV within 2 min) as computed here",
+  "unit": "boolean",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "bool",
+  "n_null": 0
+ },
+ "event_note": {
+  "name": "event_note",
+  "description": "a start-up event the custodian's file name records for this checkpoint; null otherwise",
+  "unit": "text",
+  "provenance": "custodian file name",
+  "dtype_observed": "str",
+  "n_null": 2960
+ },
+ "temperature_C": {
+  "name": "temperature_C",
+  "description": "coolant inlet T.Si.CL, mean over the last 30 s",
+  "unit": "degC",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "dewpoint_anode_C": {
+  "name": "dewpoint_anode_C",
+  "description": "mean over the last 30 s",
+  "unit": "degC",
+  "provenance": "custodian column DPT.Si.A",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "dewpoint_cathode_C": {
+  "name": "dewpoint_cathode_C",
+  "description": "mean over the last 30 s",
+  "unit": "degC",
+  "provenance": "custodian column DPT.Si.C",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "pressure_anode_kPa": {
+  "name": "pressure_anode_kPa",
+  "description": "mean over the last 30 s",
+  "unit": "kPa gauge",
+  "provenance": "custodian column p.Si.A",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "pressure_cathode_kPa": {
+  "name": "pressure_cathode_kPa",
+  "description": "mean over the last 30 s",
+  "unit": "kPa gauge",
+  "provenance": "custodian column p.Si.C",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "stoich_anode": {
+  "name": "stoich_anode",
+  "description": "mean over the last 30 s",
+  "unit": "ratio",
+  "provenance": "custodian column Stoic.S.A",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "stoich_cathode": {
+  "name": "stoich_cathode",
+  "description": "mean over the last 30 s",
+  "unit": "ratio",
+  "provenance": "custodian column Stoic.S.C",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "anode_inlet_temperature_C": {
+  "name": "anode_inlet_temperature_C",
+  "description": "T.Si.A, mean over the last 30 s",
+  "unit": "degC",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "anode_outlet_temperature_C": {
+  "name": "anode_outlet_temperature_C",
+  "description": "T.So.A, mean over the last 30 s",
+  "unit": "degC",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "cathode_inlet_temperature_C": {
+  "name": "cathode_inlet_temperature_C",
+  "description": "T.Si.C, mean over the last 30 s",
+  "unit": "degC",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "cathode_outlet_temperature_C": {
+  "name": "cathode_outlet_temperature_C",
+  "description": "T.So.C, mean over the last 30 s",
+  "unit": "degC",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "coolant_outlet_temperature_C": {
+  "name": "coolant_outlet_temperature_C",
+  "description": "T.So.CL, mean over the last 30 s (temperature_C is the coolant INLET T.Si.CL)",
+  "unit": "degC",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "pressure_anode_outlet_kPa": {
+  "name": "pressure_anode_outlet_kPa",
+  "description": "p.So.A, mean over the last 30 s",
+  "unit": "kPa gauge",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "pressure_cathode_outlet_kPa": {
+  "name": "pressure_cathode_outlet_kPa",
+  "description": "p.So.C, mean over the last 30 s",
+  "unit": "kPa gauge",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "flow_h2_anode_nl_min": {
+  "name": "flow_h2_anode_nl_min",
+  "description": "F.Si.H.A, mean over the last 30 s",
+  "unit": "nl/min",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "flow_air_cathode_nl_min": {
+  "name": "flow_air_cathode_nl_min",
+  "description": "F.Si.Air.C, mean over the last 30 s",
+  "unit": "nl/min",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "flow_coolant_l_min": {
+  "name": "flow_coolant_l_min",
+  "description": "F.Si.CL, mean over the last 30 s",
+  "unit": "l/min",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "custodian_OpHrs_h": {
+  "name": "custodian_OpHrs_h",
+  "description": "the custodian's operating-hours counter OpHrs at the hold; ageing_hours is the file-name label",
+  "unit": "h",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "custodian_OpHrs2_h": {
+  "name": "custodian_OpHrs2_h",
+  "description": "the custodian's second counter OpHrs2 at the hold",
+  "unit": "h",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 2620
+ }
+}

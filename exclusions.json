@@ -1,0 +1,269 @@
+{
+ "run_utc": "2026-09-28T14:41:36+00:00",
+ "variant": "extension only, CC BY: exclusions of the four extension sources",
+ "rules": [
+  "cell_with_one_checkpoint_not_counted",
+  "dead_channel_no_positive_voltage",
+  "duplicate_entity_identical_content",
+  "repeated_block_identical",
+  "sample_nonpositive_voltage_or_negative_current"
+ ],
+ "exclusions": [
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 10,
+   "detail": "Cell_01.zip",
+   "cell_id": "fraunhofer_cell01"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 1,
+   "detail": "Cell_07.zip",
+   "cell_id": "fraunhofer_cell07"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 8,
+   "detail": "Cell_10.zip",
+   "cell_id": "fraunhofer_cell10"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 10,
+   "detail": "Cell_11.zip",
+   "cell_id": "fraunhofer_cell11"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 5,
+   "detail": "Cell_12.zip",
+   "cell_id": "fraunhofer_cell12"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "duplicate_entity_identical_content",
+   "unit": "cell",
+   "n": 1,
+   "detail": "Cell_14.zip: every IV_data.csv is byte-identical to Cell_03.zip (custodian: 36 unique durability tests, 42 folders); kept once as fraunhofer_cell03",
+   "cell_id": "fraunhofer_cell14"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "duplicate_entity_identical_content",
+   "unit": "cell",
+   "n": 1,
+   "detail": "Cell_18.zip: every IV_data.csv is byte-identical to Cell_12.zip (custodian: 36 unique durability tests, 42 folders); kept once as fraunhofer_cell12",
+   "cell_id": "fraunhofer_cell18"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 2,
+   "detail": "Cell_22.zip",
+   "cell_id": "fraunhofer_cell22"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 9,
+   "detail": "Cell_27.zip",
+   "cell_id": "fraunhofer_cell27"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "duplicate_entity_identical_content",
+   "unit": "cell",
+   "n": 1,
+   "detail": "Cell_31.zip: every IV_data.csv is byte-identical to Cell_02.zip (custodian: 36 unique durability tests, 42 folders); kept once as fraunhofer_cell02",
+   "cell_id": "fraunhofer_cell31"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "duplicate_entity_identical_content",
+   "unit": "cell",
+   "n": 1,
+   "detail": "Cell_33.zip: every IV_data.csv is byte-identical to Cell_11.zip (custodian: 36 unique durability tests, 42 folders); kept once as fraunhofer_cell11",
+   "cell_id": "fraunhofer_cell33"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 5,
+   "detail": "Cell_34.zip",
+   "cell_id": "fraunhofer_cell34"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 1,
+   "detail": "Cell_35.zip",
+   "cell_id": "fraunhofer_cell35"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 7,
+   "detail": "Cell_36.zip",
+   "cell_id": "fraunhofer_cell36"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 7,
+   "detail": "Cell_37.zip",
+   "cell_id": "fraunhofer_cell37"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 5,
+   "detail": "Cell_38.zip",
+   "cell_id": "fraunhofer_cell38"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 5,
+   "detail": "Cell_40.zip",
+   "cell_id": "fraunhofer_cell40"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "duplicate_entity_identical_content",
+   "unit": "cell",
+   "n": 1,
+   "detail": "Cell_41.zip: every IV_data.csv is byte-identical to Cell_27.zip (custodian: 36 unique durability tests, 42 folders); kept once as fraunhofer_cell27",
+   "cell_id": "fraunhofer_cell41"
+  },
+  {
+   "source_key": "fraunhofer_ise_tri",
+   "rule": "sample_nonpositive_voltage_or_negative_current",
+   "unit": "row",
+   "n": 12,
+   "detail": "Cell_42.zip",
+   "cell_id": "fraunhofer_cell42"
+  },
+  {
+   "source_key": "polimi",
+   "rule": "repeated_block_identical",
+   "unit": "block",
+   "n": 1,
+   "detail": "'CCM B - reference polarization curve at 1000 operating hours' occurs again at line 21 (field 22); byte-identical to the first occurrence, read once",
+   "cell_id": "polimi_ccm_B"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_BoL.csv: no row with a positive voltage (max -0.000244 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_300h.csv: no row with a positive voltage (max -0.000427 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_600h.csv: no row with a positive voltage (max -0.000427 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_850h.csv: no row with a positive voltage (max -0.000488 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_1150h.csv: no row with a positive voltage (max -0.000488 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_1500h.csv: no row with a positive voltage (max -0.000488 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_1500h_afterAirAirStart.csv: no row with a positive voltage (max -0.000488 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_1750h.csv: no row with a positive voltage (max -0.000549 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_2000h.csv: no row with a positive voltage (max -0.000488 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_2300h.csv: no row with a positive voltage (max -0.000549 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "zsw_hyfab",
+   "rule": "dead_channel_no_positive_voltage",
+   "unit": "channel",
+   "n": 1,
+   "detail": "U6 [V] in Polcurve_Nominal_RHFC_2300h_afterAirAirStart.csv: no row with a positive voltage (max -0.000488 V)",
+   "cell_id": "zsw_hyfab_cell6"
+  },
+  {
+   "source_key": "polimi",
+   "rule": "cell_with_one_checkpoint_not_counted",
+   "unit": "cell",
+   "n": 1,
+   "detail": "polimi_ccm_C has 1 checkpoint(s); rows released in data/uncounted_cell_rows.csv, not in data.csv",
+   "cell_id": "polimi_ccm_C"
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+NOTICE - attribution and licence terms of the upstream sources
+==================================================================
+
+This deposit (the CC BY variant) is released under CC-BY-4.0 <https://creativecommons.org/licenses/by/4.0/>.
+
+This variant contains NO FCLAB bytes. To rebuild the union (base plus extension) on your own machine:
+  curl -L 'https://search-data.ubfc.fr/dl_data.php?file=97' -o RAW/fclab/FC1_FC2_Excel.zip   (place the four extension downloads beside it, see README.md step 2)
+  python rebuild/rebuild_dpo04.py --variant union --raw-dir RAW --out UNION   (README.md, recipe step 3; no lab code needed)
+The union you build is then CC BY-NC-SA 4.0 and its conditions are yours to honour.
+
+------------------------------------------------------------------
+Source SRC-357 (fraunhofer_ise_tri)
+Title (as the custodian states it): In-Situ Characterization of Cathode Catalyst Degradation in PEM Fuel Cells
+Creators: Patrick Schneider; Anne-Christine Scherzer; Linda Ney; Ha-Kyung Kwon; Brian D. Storey; Dietmar Gerteisen; Nada Zamel
+Custodian: Fraunhofer Institute for Solar Energy Systems ISE with Toyota Research Institute (Schneider, Scherzer, Ney, Kwon, Storey, Gerteisen, Zamel)
+Identifier: doi:10.6084/m9.figshare.25450177
+Landing page: https://figshare.com/articles/dataset/In-Situ_Characterization_of_Cathode_Catalyst_Degradation_in_PEM_Fuel_Cells/25450177
+Licence: Creative Commons Attribution 4.0 International (CC-BY-4.0) <https://creativecommons.org/licenses/by/4.0/>
+Licence field quoted from the custodian's API record: CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/
+Requested citation: Schneider, Patrick; Scherzer, Anne-Christine; Ney, Linda; Kwon, Ha-Kyung; Storey, Brian D.; Gerteisen, Dietmar; et al. (2024). In-Situ Characterization of Cathode Catalyst Degradation in PEM Fuel Cells. figshare. Dataset. https://doi.org/10.6084/m9.figshare.25450177.v1
+
+Modifications made here: IV_data.csv rows carried as published; rows with non-positive voltage or negative current excluded and counted; RH from the folder name, temperature and pressure from the protocol sheet; the EIS, CV, LSV and limiting-current files are not carried and are listed in data/fraunhofer_characterisation_pointers.csv
+
+------------------------------------------------------------------
+Source SRC-358 (rwth_realageing)
+Title (as the custodian states it): Dataset to: Realistic accelerated stress tests for PEM fuel cells: Test procedure development based on standardized automotive driving cycles
+Creators: Thiele, Paul; Yang, Yue; Dirkes, Steffen; Wick, Maximilian; Pischinger, Stefan
+Custodian: RWTH Aachen University (Paul Thiele, Yue Yang, Steffen Dirkes) - RealAgeing dataset
+Identifier: doi:10.5281/zenodo.13166135
+Landing page: https://zenodo.org/records/13166135
+Licence: Creative Commons Attribution 4.0 International (CC-BY-4.0) <https://creativecommons.org/licenses/by/4.0/>
+Licence sentence quoted from the custodian: [href: https://creativecommons.org/licenses/by/4.0/legalcode]
+Requested citation: P. Thiele, Y. Yang, S. Dirkes, M. Wick, S. Pischinger, Realistic accelerated stress tests for PEM fuel cells: Test procedure development based on standardized automotive driving cycles, Int. J. Hydrogen Energy 52 (Part D) (2024) 1065–1080, https://doi.org/10.1016/j.ijhydene.2023.08.292
+
+Modifications made here: millivolt columns converted to volt; operating reference 1 files only; conditions from OperatingParameters.xlsx
+
+------------------------------------------------------------------
+Source SRC-359 (polimi)
+Title (as the custodian states it): Dataset of "PEMFC performance decay during real-world automotive operation: evincing degradation mechanisms and heterogeneity of ageing"
+Creators: Colombo Elena; Baricci Andrea; Bisello Andrea; Guetaz Laure; Casalegno Andrea
+Custodian: Politecnico di Milano (Elena Colombo, Andrea Baricci, Andrea Bisello)
+Identifier: doi:10.5281/zenodo.7054555
+Landing page: https://zenodo.org/records/7054555
+Licence: Creative Commons Attribution 4.0 International (CC-BY-4.0) <https://creativecommons.org/licenses/by/4.0/>
+Licence sentence quoted from the custodian: [href: https://creativecommons.org/licenses/by/4.0/legalcode]
+Requested citation: none stated by the custodian on the deposit page
+
+Modifications made here: reference polarisation curves read from the deposited sheet; the repeated CCM B 1000 h block read once; CCM C (one checkpoint) released in data/uncounted_cell_rows.csv and not counted
+
+------------------------------------------------------------------
+Source SRC-360 (zsw_hyfab)
+Title (as the custodian states it): Underlying data of the paper "Spatially Resolved Electrochemical Characterization of a PEM Fuel Cell Stack During Durability Testing"
+Creators: Fensterle, Eva; Hunger, Jürgen; Rabsahl, Frank; Wilhelm, Florian; Kolle Christensen, Christian; Benson, Adam; Al-Khamissi, Rami; Trégaro, Marine; Escribano, Sylvie; Scholta, Joachim; Hölzle, Markus
+Custodian: Zentrum fuer Sonnenenergie- und Wasserstoff-Forschung Baden-Wuerttemberg (Eva Fensterle, Juergen Hunger, Frank Rabsahl)
+Identifier: doi:10.5281/zenodo.20715542
+Landing page: https://zenodo.org/records/20715542
+Licence: Creative Commons Attribution 4.0 International (CC-BY-4.0) <https://creativecommons.org/licenses/by/4.0/>
+Licence sentence quoted from the custodian: [href: https://creativecommons.org/licenses/by/4.0/legalcode]
+Requested citation: none stated by the custodian on the deposit page
+
+Modifications made here: every nominal polarisation file (Polcurve_Nominal_RHFC_*.csv) read in time order; the two files named _afterAirAirStart carried as recovery-event curves (checkpoint_kind recovery_event), not as ageing checkpoints; polarisation procedure time series binned to 0.02 A/cm2 by median voltage with per-bin median conditions and dwell; set-point holds averaged over their last 30 s; channel U6 (no positive voltage in any file) excluded and counted

@@ -1,0 +1,178 @@
+{
+ "cell_id": {
+  "name": "cell_id",
+  "description": "the cell, unique across the collection; the primary entity",
+  "unit": "identifier",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "source_key": {
+  "name": "source_key",
+  "description": "which custodian the cell comes from",
+  "unit": "categorical",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "custodian": {
+  "name": "custodian",
+  "description": "the laboratory that produced and published the cell's measurements",
+  "unit": "text",
+  "provenance": "SOURCE record",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "n_rows": {
+  "name": "n_rows",
+  "description": "rows of the cell in data.csv",
+  "unit": "count",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "int64",
+  "n_null": 0
+ },
+ "n_checkpoints": {
+  "name": "n_checkpoints",
+  "description": "distinct ordinary ageing checkpoints of the cell (recovery-event curves not counted)",
+  "unit": "count",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "int64",
+  "n_null": 0
+ },
+ "n_recovery_event_checkpoints": {
+  "name": "n_recovery_event_checkpoints",
+  "description": "recovery-event curves of the cell (checkpoint_kind recovery_event); 0 for every source but ZSW",
+  "unit": "count",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "int64",
+  "n_null": 0
+ },
+ "j_max": {
+  "name": "j_max",
+  "description": "highest current density released for the cell",
+  "unit": "A/cm2",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "v_min": {
+  "name": "v_min",
+  "description": "lowest cell voltage released for the cell",
+  "unit": "V",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "v_max": {
+  "name": "v_max",
+  "description": "highest cell voltage released for the cell",
+  "unit": "V",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "counted": {
+  "name": "counted",
+  "description": "True for every cell in data.csv: a cell with at least two checkpoints, counted by count_cells()",
+  "unit": "boolean",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "bool",
+  "n_null": 0
+ },
+ "pt_load_mg_cm2": {
+  "name": "pt_load_mg_cm2",
+  "description": "cathode platinum loading (Fraunhofer test_overview)",
+  "unit": "mg/cm2",
+  "provenance": "custodian sheet",
+  "dtype_observed": "float64",
+  "n_null": 20
+ },
+ "ionomer_to_carbon_ratio": {
+  "name": "ionomer_to_carbon_ratio",
+  "description": "cathode ionomer-to-carbon ratio (Fraunhofer)",
+  "unit": "ratio",
+  "provenance": "custodian sheet",
+  "dtype_observed": "float64",
+  "n_null": 20
+ },
+ "ionomer_ew_g_mol": {
+  "name": "ionomer_ew_g_mol",
+  "description": "ionomer equivalent weight (Fraunhofer)",
+  "unit": "g/mol",
+  "provenance": "custodian sheet",
+  "dtype_observed": "float64",
+  "n_null": 20
+ },
+ "pt_on_carbon_pct": {
+  "name": "pt_on_carbon_pct",
+  "description": "platinum on carbon (Fraunhofer)",
+  "unit": "percent",
+  "provenance": "custodian sheet",
+  "dtype_observed": "float64",
+  "n_null": 20
+ },
+ "catalyst_type": {
+  "name": "catalyst_type",
+  "description": "catalyst (Fraunhofer)",
+  "unit": "text",
+  "provenance": "custodian sheet",
+  "dtype_observed": "str",
+  "n_null": 20
+ },
+ "support_type": {
+  "name": "support_type",
+  "description": "carbon support (Fraunhofer)",
+  "unit": "text",
+  "provenance": "custodian sheet",
+  "dtype_observed": "str",
+  "n_null": 20
+ },
+ "ast_upper_potential_limit_V": {
+  "name": "ast_upper_potential_limit_V",
+  "description": "accelerated-stress-test upper potential limit (Fraunhofer)",
+  "unit": "V",
+  "provenance": "custodian sheet",
+  "dtype_observed": "float64",
+  "n_null": 20
+ },
+ "ast_rh_pct": {
+  "name": "ast_rh_pct",
+  "description": "accelerated-stress-test relative humidity (Fraunhofer)",
+  "unit": "percent",
+  "provenance": "custodian sheet",
+  "dtype_observed": "float64",
+  "n_null": 20
+ },
+ "material_variation": {
+  "name": "material_variation",
+  "description": "the custodian's material-variation group (Fraunhofer)",
+  "unit": "text",
+  "provenance": "custodian sheet",
+  "dtype_observed": "str",
+  "n_null": 20
+ },
+ "ast_variation": {
+  "name": "ast_variation",
+  "description": "the custodian's AST-variation group (Fraunhofer)",
+  "unit": "text",
+  "provenance": "custodian sheet",
+  "dtype_observed": "str",
+  "n_null": 20
+ },
+ "source_doi": {
+  "name": "source_doi",
+  "description": "DOI of the cell's input (see data/sources.csv)",
+  "unit": "identifier",
+  "provenance": "custodian record",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "source_landing_url": {
+  "name": "source_landing_url",
+  "description": "landing page of the cell's input",
+  "unit": "url",
+  "provenance": "custodian record",
+  "dtype_observed": "str",
+  "n_null": 0
+ }
+}

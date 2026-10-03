@@ -1,0 +1,58 @@
+cell_id,group,split
+fraunhofer_cell01,fraunhofer_cell01,train
+fraunhofer_cell02,fraunhofer_cell02,train
+fraunhofer_cell03,fraunhofer_cell03,test
+fraunhofer_cell04,fraunhofer_cell04,train
+fraunhofer_cell05,fraunhofer_cell05,test
+fraunhofer_cell06,fraunhofer_cell06,train
+fraunhofer_cell07,fraunhofer_cell07,train
+fraunhofer_cell08,fraunhofer_cell08,train
+fraunhofer_cell09,fraunhofer_cell09,train
+fraunhofer_cell10,fraunhofer_cell10,train
+fraunhofer_cell11,fraunhofer_cell11,train
+fraunhofer_cell12,fraunhofer_cell12,train
+fraunhofer_cell13,fraunhofer_cell13,train
+fraunhofer_cell15,fraunhofer_cell15,test
+fraunhofer_cell16,fraunhofer_cell16,train
+fraunhofer_cell17,fraunhofer_cell17,train
+fraunhofer_cell19,fraunhofer_cell19,test
+fraunhofer_cell20,fraunhofer_cell20,train
+fraunhofer_cell21,fraunhofer_cell21,train
+fraunhofer_cell22,fraunhofer_cell22,train
+fraunhofer_cell23,fraunhofer_cell23,train
+fraunhofer_cell24,fraunhofer_cell24,test
+fraunhofer_cell25,fraunhofer_cell25,train
+fraunhofer_cell26,fraunhofer_cell26,test
+fraunhofer_cell27,fraunhofer_cell27,train
+fraunhofer_cell28,fraunhofer_cell28,train
+fraunhofer_cell29,fraunhofer_cell29,test
+fraunhofer_cell30,fraunhofer_cell30,train
+fraunhofer_cell32,fraunhofer_cell32,train
+fraunhofer_cell34,fraunhofer_cell34,train
+fraunhofer_cell35,fraunhofer_cell35,train
+fraunhofer_cell36,fraunhofer_cell36,train
+fraunhofer_cell37,fraunhofer_cell37,train
+fraunhofer_cell38,fraunhofer_cell38,test
+fraunhofer_cell39,fraunhofer_cell39,train
+fraunhofer_cell40,fraunhofer_cell40,train
+fraunhofer_cell42,fraunhofer_cell42,test
+polimi_ccm_A,polimi_ccm_A,train
+polimi_ccm_B,polimi_ccm_B,test
+rwth_stack1_cell1,Stack1,train
+rwth_stack1_cell10,Stack1,train
+rwth_stack1_cell15,Stack1,train
+rwth_stack1_cell24,Stack1,train
+rwth_stack2_cell1,Stack2,test
+rwth_stack2_cell10,Stack2,test
+rwth_stack2_cell15,Stack2,test
+rwth_stack2_cell24,Stack2,test
+zsw_hyfab_cell1,HyFaB short stack,train
+zsw_hyfab_cell10,HyFaB short stack,train
+zsw_hyfab_cell11,HyFaB short stack,train
+zsw_hyfab_cell2,HyFaB short stack,train
+zsw_hyfab_cell3,HyFaB short stack,train
+zsw_hyfab_cell4,HyFaB short stack,train
+zsw_hyfab_cell5,HyFaB short stack,train
+zsw_hyfab_cell7,HyFaB short stack,train
+zsw_hyfab_cell8,HyFaB short stack,train
+zsw_hyfab_cell9,HyFaB short stack,train

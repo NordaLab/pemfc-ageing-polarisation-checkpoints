@@ -1,0 +1,18 @@
+{
+ "cell_id": {
+  "name": "cell_id",
+  "description": "the cell",
+  "unit": "identifier",
+  "provenance": "make_release_dpo04.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "split": {
+  "name": "split",
+  "description": "train or test",
+  "unit": "categorical",
+  "provenance": "make_release_dpo04.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ }
+}

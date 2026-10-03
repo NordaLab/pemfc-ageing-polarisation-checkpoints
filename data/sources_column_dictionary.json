@@ -1,0 +1,74 @@
+{
+ "source_key": {
+  "name": "source_key",
+  "unit": "identifier",
+  "description": "the source key used in data.csv and cells.csv",
+  "provenance": "make_release_dpo04.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "source_id": {
+  "name": "source_id",
+  "unit": "identifier",
+  "description": "the lab's SOURCE record id",
+  "provenance": "registry",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "role": {
+  "name": "role",
+  "unit": "categorical",
+  "description": "base or extension",
+  "provenance": "make_release_dpo04.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "custodian": {
+  "name": "custodian",
+  "unit": "text",
+  "description": "the custodian as the SOURCE record names it",
+  "provenance": "registry",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "title": {
+  "name": "title",
+  "unit": "text",
+  "description": "the title the custodian's own record carries",
+  "provenance": "custodian record",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "doi": {
+  "name": "doi",
+  "unit": "identifier",
+  "description": "the input's DOI",
+  "provenance": "custodian record",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "landing_url": {
+  "name": "landing_url",
+  "unit": "url",
+  "description": "the custodian's landing page",
+  "provenance": "custodian record",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "licence_spdx": {
+  "name": "licence_spdx",
+  "unit": "identifier",
+  "description": "SPDX id of the input's licence",
+  "provenance": "custodian record",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "licence_uri": {
+  "name": "licence_uri",
+  "unit": "url",
+  "description": "the licence deed",
+  "provenance": "creativecommons.org",
+  "dtype_observed": "str",
+  "n_null": 0
+ }
+}

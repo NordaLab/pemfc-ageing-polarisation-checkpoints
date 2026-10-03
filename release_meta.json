@@ -1,0 +1,305 @@
+{
+ "release_id": "REL-005",
+ "object_id": "DPO-04",
+ "name": "PEM fuel cell durability collection: polarisation curves at ageing checkpoints (CC BY variant)",
+ "description": "Tables: data.csv (the polarisation checkpoints of the four extension sources), data/cells.csv (one row per cell, with the Fraunhofer cathode and stressor parameters per cell and each source's DOI), data/sources.csv (one row per input: identifier, custodian, title, DOI, landing page, licence), data/zsw_setpoint_holds.csv (the ZSW set-point holds: last-30-s means per set point and direction, with the JRC 7.1 station columns), data/fraunhofer_characterisation_pointers.csv (where each EIS, CV, LSV and limiting-current file of the counted Fraunhofer cells sits in the custodian's archives; those files are not carried), data/uncounted_cell_rows.csv (the one-checkpoint PoliMi cell, not counted), split_by_cell.csv and split_by_stack.csv; every other file under data/ is a column dictionary listed in the release record with role schema.",
+ "built_by": "build_dpo04_pemfc.py + make_release_dpo04.py",
+ "built_utc": "2026-09-28T15:03:54+00:00",
+ "primary_entity": "cell with at least two ageing checkpoints",
+ "variant": "ccby",
+ "sources": [
+  {
+   "seed_id": null,
+   "source_id": "SRC-357",
+   "title": "In-Situ Characterization of Cathode Catalyst Degradation in PEM Fuel Cells",
+   "lab_title": "In-Situ Characterization of Cathode Catalyst Degradation in PEM Fuel Cells - 42 cells, 36 durability tests, over 4000 testing hours (Scientific Data 2024)",
+   "custodian": "Fraunhofer Institute for Solar Energy Systems ISE with Toyota Research Institute (Schneider, Scherzer, Ney, Kwon, Storey, Gerteisen, Zamel)",
+   "landing_url": "https://figshare.com/articles/dataset/In-Situ_Characterization_of_Cathode_Catalyst_Degradation_in_PEM_Fuel_Cells/25450177",
+   "doi": "10.6084/m9.figshare.25450177",
+   "role": "extension",
+   "licence_name": "Creative Commons Attribution 4.0 International",
+   "licence_spdx": "CC-BY-4.0",
+   "licence_uri": "https://creativecommons.org/licenses/by/4.0/",
+   "licence_quote": "CC BY 4.0\", \"url\": \"https://creativecommons.org/licenses/by/4.0/",
+   "creators": [
+    "Patrick Schneider",
+    "Anne-Christine Scherzer",
+    "Linda Ney",
+    "Ha-Kyung Kwon",
+    "Brian D. Storey",
+    "Dietmar Gerteisen",
+    "Nada Zamel"
+   ],
+   "requested_citation": "Schneider, Patrick; Scherzer, Anne-Christine; Ney, Linda; Kwon, Ha-Kyung; Storey, Brian D.; Gerteisen, Dietmar; et al. (2024). In-Situ Characterization of Cathode Catalyst Degradation in PEM Fuel Cells. figshare. Dataset. https://doi.org/10.6084/m9.figshare.25450177.v1",
+   "sha256_of_snapshot": "5d9079a07316253e3347f3853b4f3a2802cd64f368b20e887b921e4d4b72e435",
+   "snapshot_is_full_corpus": true
+  },
+  {
+   "seed_id": null,
+   "source_id": "SRC-358",
+   "title": "Dataset to: Realistic accelerated stress tests for PEM fuel cells: Test procedure development based on standardized automotive driving cycles",
+   "lab_title": "Dataset to: Realistic accelerated stress tests for PEM fuel cells - test procedure development based on standardized automotive driving cycles (two commercial stacks)",
+   "custodian": "RWTH Aachen University (Paul Thiele, Yue Yang, Steffen Dirkes) - RealAgeing dataset",
+   "landing_url": "https://zenodo.org/records/13166135",
+   "doi": "10.5281/zenodo.13166135",
+   "role": "extension",
+   "licence_name": "Creative Commons Attribution 4.0 International",
+   "licence_spdx": "CC-BY-4.0",
+   "licence_uri": "https://creativecommons.org/licenses/by/4.0/",
+   "licence_quote": "[href: https://creativecommons.org/licenses/by/4.0/legalcode]",
+   "creators": [
+    "Thiele, Paul",
+    "Yang, Yue",
+    "Dirkes, Steffen",
+    "Wick, Maximilian",
+    "Pischinger, Stefan"
+   ],
+   "requested_citation": "P. Thiele, Y. Yang, S. Dirkes, M. Wick, S. Pischinger, Realistic accelerated stress tests for PEM fuel cells: Test procedure development based on standardized automotive driving cycles, Int. J. Hydrogen Energy 52 (Part D) (2024) 1065\u20131080, https://doi.org/10.1016/j.ijhydene.2023.08.292",
+   "sha256_of_snapshot": "695f6df14f056cdebf186ee2aad2c3d068d0b6a4961333d4d0e6448a430ae234",
+   "snapshot_is_full_corpus": true
+  },
+  {
+   "seed_id": null,
+   "source_id": "SRC-359",
+   "title": "Dataset of \"PEMFC performance decay during real-world automotive operation: evincing degradation mechanisms and heterogeneity of ageing\"",
+   "lab_title": "Dataset of PEMFC performance decay during real-world automotive operation: evincing degradation mechanisms and heterogeneity of ageing",
+   "custodian": "Politecnico di Milano (Elena Colombo, Andrea Baricci, Andrea Bisello)",
+   "landing_url": "https://zenodo.org/records/7054555",
+   "doi": "10.5281/zenodo.7054555",
+   "role": "extension",
+   "licence_name": "Creative Commons Attribution 4.0 International",
+   "licence_spdx": "CC-BY-4.0",
+   "licence_uri": "https://creativecommons.org/licenses/by/4.0/",
+   "licence_quote": "[href: https://creativecommons.org/licenses/by/4.0/legalcode]",
+   "creators": [
+    "Colombo Elena",
+    "Baricci Andrea",
+    "Bisello Andrea",
+    "Guetaz Laure",
+    "Casalegno Andrea"
+   ],
+   "requested_citation": null,
+   "sha256_of_snapshot": "d7cb431cc723ffa3157cf8b0542c9d0e5ca9e70ae4f145286aec2aa98e0ac042",
+   "snapshot_is_full_corpus": true
+  },
+  {
+   "seed_id": null,
+   "source_id": "SRC-360",
+   "title": "Underlying data of the paper \"Spatially Resolved Electrochemical Characterization of a PEM Fuel Cell Stack During Durability Testing\"",
+   "lab_title": "Underlying data of Spatially resolved electrochemical characterization of a PEM fuel cell stack during durability testing (HyFaB short stack, polarisation curves at BoL, 300 h, 2000 h, 2300 h)",
+   "custodian": "Zentrum fuer Sonnenenergie- und Wasserstoff-Forschung Baden-Wuerttemberg (Eva Fensterle, Juergen Hunger, Frank Rabsahl)",
+   "landing_url": "https://zenodo.org/records/20715542",
+   "doi": "10.5281/zenodo.20715542",
+   "role": "extension",
+   "licence_name": "Creative Commons Attribution 4.0 International",
+   "licence_spdx": "CC-BY-4.0",
+   "licence_uri": "https://creativecommons.org/licenses/by/4.0/",
+   "licence_quote": "[href: https://creativecommons.org/licenses/by/4.0/legalcode]",
+   "creators": [
+    "Fensterle, Eva",
+    "Hunger, J\u00fcrgen",
+    "Rabsahl, Frank",
+    "Wilhelm, Florian",
+    "Kolle Christensen, Christian",
+    "Benson, Adam",
+    "Al-Khamissi, Rami",
+    "Tr\u00e9garo, Marine",
+    "Escribano, Sylvie",
+    "Scholta, Joachim",
+    "H\u00f6lzle, Markus"
+   ],
+   "requested_citation": null,
+   "sha256_of_snapshot": "7b49b0ffd97586f67aea2a79116de3500b44754f0da190ef5635d5e378b7b316",
+   "snapshot_is_full_corpus": true
+  }
+ ],
+ "licence": {
+  "declared": "CC-BY-4.0",
+  "quote": "CC BY 4.0\", \"url\": \"https://creativecommons.org/licenses/by/4.0/",
+  "permits_derivative": true,
+  "permits_redistribution": true,
+  "non_commercial": false,
+  "share_alike": false,
+  "outbound": "CC-BY-4.0",
+  "outbound_uri": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution_required": true,
+  "quote_context": {
+   "preceding": "see NOTICE.txt",
+   "following": "see NOTICE.txt"
+  },
+  "why": "every byte in this variant comes from the four CC BY 4.0 sources; the FCLAB base (CC BY-NC-SA 3.0) is NOT included and is fetched by the user with the recipe in README.md, so no NonCommercial or ShareAlike condition attaches"
+ },
+ "upstream_licences": [
+  {
+   "source_id": "SRC-357",
+   "custodian": "Fraunhofer Institute for Solar Energy Systems ISE with Toyota Research Institute (Schneider, Scherzer, Ney, Kwon, Storey, Gerteisen, Zamel)",
+   "licence": "Creative Commons Attribution 4.0 International",
+   "spdx": "CC-BY-4.0",
+   "uri": "https://creativecommons.org/licenses/by/4.0/",
+   "quote": "CC BY 4.0\", \"url\": \"https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "source_id": "SRC-358",
+   "custodian": "RWTH Aachen University (Paul Thiele, Yue Yang, Steffen Dirkes) - RealAgeing dataset",
+   "licence": "Creative Commons Attribution 4.0 International",
+   "spdx": "CC-BY-4.0",
+   "uri": "https://creativecommons.org/licenses/by/4.0/",
+   "quote": "[href: https://creativecommons.org/licenses/by/4.0/legalcode]"
+  },
+  {
+   "source_id": "SRC-359",
+   "custodian": "Politecnico di Milano (Elena Colombo, Andrea Baricci, Andrea Bisello)",
+   "licence": "Creative Commons Attribution 4.0 International",
+   "spdx": "CC-BY-4.0",
+   "uri": "https://creativecommons.org/licenses/by/4.0/",
+   "quote": "[href: https://creativecommons.org/licenses/by/4.0/legalcode]"
+  },
+  {
+   "source_id": "SRC-360",
+   "custodian": "Zentrum fuer Sonnenenergie- und Wasserstoff-Forschung Baden-Wuerttemberg (Eva Fensterle, Juergen Hunger, Frank Rabsahl)",
+   "licence": "Creative Commons Attribution 4.0 International",
+   "spdx": "CC-BY-4.0",
+   "uri": "https://creativecommons.org/licenses/by/4.0/",
+   "quote": "[href: https://creativecommons.org/licenses/by/4.0/legalcode]"
+  }
+ ],
+ "coverage_statement": "polarisation checkpoints of 57 PEM fuel cells from four laboratories, aged under four protocols; NOT a random sample of any population of cells, and the ageing axis is not comparable across protocols",
+ "not_answerable": [
+  "remaining useful life under a common end-of-life definition across custodians: no cell was aged to a shared end-of-life criterion",
+  "which protocol degrades faster per hour: hours and cycles are not convertible without the drive-cycle definitions",
+  "reference operating conditions of the PoliMi curves: not in the deposited sheet",
+  "sequence-model prognostics (LSTM, TCN, particle filter): 2 to 9 ordinary ageing checkpoints per cell of the polarisation table, and no continuous time series",
+  "EIS, cyclic voltammetry, LSV and limiting current of the Fraunhofer cells: not carried; data/fraunhofer_characterisation_pointers.csv says where each file sits in the custodian's archives"
+ ],
+ "version": "1.4.0",
+ "known_gaps": [
+  "ageing axis not harmonised across protocols (hours for PoliMi and ZSW; cycles of two different kinds for Fraunhofer and RWTH)",
+  "operating conditions carried only where the custodian recorded them; conditions_source says where and why null",
+  "ZSW sweeps binned to 0.02 A/cm2; bin sample counts kept; dwell_s from the file's clock",
+  "zsw_hyfab_cell6 excluded: its voltage channel has no positive value in any of 11 files (dead channel); rule dead_channel_no_positive_voltage",
+  "polimi_ccm_C: polimi_ccm_C has 1 checkpoint(s); rows released in data/uncounted_cell_rows.csv, not in data.csv",
+  "PoliMi: 'CCM B - reference polarization curve at 1000 operating hours' occurs again at line 21 (field 22); byte-identical to the first occurrence, read once",
+  "rows or samples with non-positive voltage or negative current excluded before binning: fraunhofer_ise_tri 87",
+  "row key (source_key, cell_id, checkpoint_index, recovery_event_index, condition_label, point_index): 0 exact duplicate rows, 0 rows duplicated on the key (VAL-0065, prediction_upheld; registered with VAL-0053 and 2 earlier run(s) on the record, measured on changed bytes (table changed))",
+  "worst cross-source median ratio on current density and voltage 2.93, under the 3.0 a unit slip would produce (VAL-0066, prediction_upheld; registered with VAL-0054 and 2 earlier run(s) on the record, measured on changed bytes (table changed))",
+  "the laboratory is recoverable from current density and voltage alone at accuracy 0.89 against a permutation baseline of 0.54, 0.35 above it (VAL-0067, prediction_refuted; registered with VAL-0055 and 2 earlier run(s) on the record, measured on changed bytes (table changed)): a model can shortcut on source identity, so cross-laboratory claims must control for source",
+  "holding out the published by-cell split (split_by_cell.csv) costs a source model 0.000 in accuracy against a random-row split of the same size; test majority-class share 0.500 on the held-out split against 0.547 on the random split, lift over the majority class 0.389 against 0.342, gap in lift -0.046 (VAL-0068, prediction_upheld; registered with VAL-0056 and 3 earlier run(s) on the record, measured on changed bytes (table changed))",
+  "holding out the published stack-level split (split_by_stack.csv) costs a source model 0.098 in accuracy against a random-row split of the same size; test majority-class share 0.771 on the held-out split against 0.547 on the random split, lift over the majority class 0.020 against 0.342, gap in lift 0.322 (VAL-0069, prediction_refuted; registered with VAL-0057 and 2 earlier run(s) on the record, measured on changed bytes (table changed))",
+  "0 of 57 cells carry curves identical to another cell's on (checkpoint_index, recovery_event_index, current_density_A_cm2, cell_voltage_V) (VAL-0070, prediction_upheld; registered with VAL-0058 and 2 earlier run(s) on the record, measured on changed bytes (table changed))",
+  "binned sweep rows are TRANSITS unless the sweep dwelt in the bin: under the JRC harmonised protocol a polarisation point is held until stable and averaged over at least 30 s; zsw_hyfab: 1980 of 10010 bins dwelt 30 s or more, 8030 less (dwell from the file's clock); point tables (Fraunhofer, RWTH, PoliMi) are the custodians' own set points",
+  "ZSW ageing_hours are the custodian's file-name labels; the custodian's article defines an operating hour as the time under load, and the station's own counters at those checkpoints (medians over the holds) read 0 h label: OpHrs 49.3 h, OpHrs2 not recorded; 300 h label: OpHrs 406.1 h, OpHrs2 not recorded; 600 h label: OpHrs 718.7 h, OpHrs2 not recorded; 850 h label: OpHrs 1075.1 h, OpHrs2 not recorded; 1150 h label: OpHrs 1416.5 h, OpHrs2 not recorded; 1500 h label: OpHrs 1822.6 h, OpHrs2 not recorded; 1500 h label (recovery-event curve): OpHrs 1826.8 h, OpHrs2 not recorded; 1750 h label: OpHrs 2136.9 h, OpHrs2 not recorded; 2000 h label: OpHrs 2480.0 h, OpHrs2 2000.1 h; 2300 h label: OpHrs 2798.5 h, OpHrs2 2258.7 h; 2300 h label (recovery-event curve): OpHrs 2802.6 h, OpHrs2 2262.0 h",
+  "ZSW: 11 nominal polarisation files are read; the 2 named _afterAirAirStart (labels 1500 and 2300 h) were recorded after a passive air/air start-up that recovers reversible losses, and carry checkpoint_kind recovery_event, a null checkpoint_index and a recovery_event_index; they are not ageing checkpoints. The ZSW cells have 9 ordinary ageing checkpoints each, the last at the 2300 h label",
+  "zsw_setpoint_holds.csv carries 3600 holds; 11748 ramp steps (I.S.set segments under 30 s) were not released",
+  "Fraunhofer: 42 cell folders were deposited, 5 are byte-identical copies of others and are excluded, leaving 37 distinct cells. The custodian's description says 36 unique durability tests; its own test_overview sheet lists 37 distinct parameter sets when the Pt loading is counted and 36 when it is not (tests 22 and 35 share every nominal parameter and differ in Pt loading), so the custodian counts designs and this deposit counts cells: 37 is the cell count and the discrepancy is resolved, not open",
+  "1290 binned rows (zsw_hyfab) include a hold longer than 300 s at the operating point (dwell_s up to 5550 s at 1.00 A/cm2): the median voltage over a hold is a stable value, not a transit; dwell_s identifies them"
+ ],
+ "additional_tables": [
+  {
+   "path": "split_by_cell.csv",
+   "column_dictionary": "data/split_by_cell_column_dictionary.json",
+   "what": "the published by-cell split"
+  },
+  {
+   "path": "split_by_stack.csv",
+   "column_dictionary": "data/split_by_stack_column_dictionary.json",
+   "what": "the published stack-level split"
+  },
+  {
+   "path": "data/sources.csv",
+   "column_dictionary": "data/sources_column_dictionary.json",
+   "description": "one row per input: identifier, custodian, title, DOI, landing page, licence"
+  },
+  {
+   "path": "data/zsw_setpoint_holds.csv",
+   "column_dictionary": "data/zsw_setpoint_holds_column_dictionary.json",
+   "what": "ZSW set-point holds: one row per cell and hold (hold_index orders the holds of a file; a set point can recur), last-30-s means, the +/-5 mV over 2 min stability flag, the JRC 7.1 station columns; ramp steps are not rows"
+  },
+  {
+   "path": "data/fraunhofer_characterisation_pointers.csv",
+   "column_dictionary": "data/fraunhofer_characterisation_pointers_column_dictionary.json",
+   "what": "one row per EIS, CV, LSV or limiting-current file of a counted Fraunhofer cell: archive, member path, method, set point, cycles, size, CRC-32; the files themselves are not carried"
+  },
+  {
+   "path": "data/cells.csv",
+   "rows": 57,
+   "columns": [
+    "cell_id",
+    "source_key",
+    "custodian",
+    "n_rows",
+    "n_checkpoints",
+    "n_recovery_event_checkpoints",
+    "j_max",
+    "v_min",
+    "v_max",
+    "counted",
+    "pt_load_mg_cm2",
+    "ionomer_to_carbon_ratio",
+    "ionomer_ew_g_mol",
+    "pt_on_carbon_pct",
+    "catalyst_type",
+    "support_type",
+    "ast_upper_potential_limit_V",
+    "ast_rh_pct",
+    "material_variation",
+    "ast_variation",
+    "source_doi",
+    "source_landing_url"
+   ],
+   "column_dictionary": "data/cells_column_dictionary.json",
+   "what": "one row per counted cell: rows, checkpoints, ranges"
+  },
+  {
+   "path": "data/uncounted_cell_rows.csv",
+   "column_dictionary": "data/uncounted_cell_rows_column_dictionary.json",
+   "what": "rows of cells with one checkpoint, not counted and not in data.csv (same columns as data.csv, its own observed nulls and dtypes)"
+  }
+ ],
+ "rebuild_command": "python rebuild/rebuild_dpo04.py --raw-dir <folder>",
+ "attribution_check": {
+  "fraunhofer_ise_tri": {
+   "verified": true,
+   "missing": [],
+   "checked": [
+    "creators 7 on the Creators line of the NOTICE block",
+    "list equality with the pinned record",
+    "doi",
+    "licence_uri",
+    "requested_citation in full"
+   ]
+  },
+  "rwth_realageing": {
+   "verified": true,
+   "missing": [],
+   "checked": [
+    "creators 5 on the Creators line of the NOTICE block",
+    "list equality with the pinned record",
+    "doi",
+    "licence_uri",
+    "requested_citation in full"
+   ]
+  },
+  "polimi": {
+   "verified": true,
+   "missing": [],
+   "checked": [
+    "creators 5 on the Creators line of the NOTICE block",
+    "list equality with the pinned record",
+    "doi",
+    "licence_uri",
+    "no citation requested"
+   ]
+  },
+  "zsw_hyfab": {
+   "verified": true,
+   "missing": [],
+   "checked": [
+    "creators 11 on the Creators line of the NOTICE block",
+    "list equality with the pinned record",
+    "doi",
+    "licence_uri",
+    "no citation requested"
+   ]
+  }
+ }
+}

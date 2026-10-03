@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: If you use this dataset, please cite it as below.
+type: dataset
+title: "Polarisation curves at ageing checkpoints for 57 proton exchange membrane fuel cells from 4 laboratories"
+version: "1.4.0"
+date-released: "2026-10-03"
+authors:
+  - family-names: "Xu"
+    given-names: "Yueqiang"
+    affiliation: "University of Oulu"
+    orcid: "https://orcid.org/0000-0002-3528-423X"
+license: "CC-BY-4.0"
+repository: "https://github.com/NordaLab/pemfc-ageing-polarisation-checkpoints"
+url: "https://github.com/NordaLab/pemfc-ageing-polarisation-checkpoints"
+keywords:
+  - "proton exchange membrane fuel cell"
+  - "PEM fuel cell"
+  - "durability"
+  - "degradation"
+  - "polarisation curve"
+  - "accelerated stress test"
+  - "ageing"
+  - "hydrogen"
+  - "harmonised dataset"
+abstract: "Tables: data.csv (the polarisation checkpoints of the four extension sources), data/cells.csv (one row per cell, with the Fraunhofer cathode and stressor parameters per cell and each source's DOI), data/sources.csv (one row per input: identifier, custodian, title, DOI, landing page, licence), data/zsw_setpoint_holds.csv (the ZSW set-point holds: last-30-s means per set point and direction, with the JRC 7.1 station columns), data/fraunhofer_characterisation_pointers.csv (where each EIS, CV, LSV and limiting-current file of the counted Fraunhofer cells sits in the custodian's archives; those files are not carried), data/uncounted_cell_rows.csv (the one-checkpoint PoliMi cell, not counted), split_by_cell.csv and split_by_stack.csv; every other file under data/ is a column dictionary listed in the release record with role schema. 18436 rows of polarisation checkpoints, 57 cells with at least two ageing checkpoints (Fraunhofer ISE / TRI 37, RWTH 8, PoliMi 2, ZSW 10). Measurand: cell voltage (V) against current density (A/cm2) at a stated ageing checkpoint, with the operating conditions each custodian recorded carried per row (see conditions_source). The ageing axis is NOT harmonised: hours for PoliMi and ZSW; accelerated-stress cycles for Fraunhofer and RWTH (two different kinds of cycle). ZSW sweeps are binned to 0.02 A/cm2 by median voltage; point tables are kept as published; RWTH mV converted to V."

@@ -1,0 +1,214 @@
+{
+ "schema": "github_mirror_manifest",
+ "version": 1,
+ "repository": "NordaLab/pemfc-ageing-polarisation-checkpoints",
+ "release_version": "1.4.0",
+ "title": "Polarisation curves at ageing checkpoints for 57 proton exchange membrane fuel cells from 4 laboratories",
+ "licence_id": "cc-by-4.0",
+ "committed_files": [
+  {
+   "path": "column_dictionary.json",
+   "bytes": 9421,
+   "sha256": "f1973aef6378a111bcf38b5d6706e3e9ea39f7f5315c038c7dbc34de798a4066",
+   "release_manifest_sha256": "f1973aef6378a111bcf38b5d6706e3e9ea39f7f5315c038c7dbc34de798a4066"
+  },
+  {
+   "path": "croissant.json",
+   "bytes": 71019,
+   "sha256": "af7356647146d981e0ab104f6d6bad788156507a9e194a3ab26ff44275e64cd7",
+   "release_manifest_sha256": "af7356647146d981e0ab104f6d6bad788156507a9e194a3ab26ff44275e64cd7"
+  },
+  {
+   "path": "data/cells.csv",
+   "bytes": 17378,
+   "sha256": "2f34bc4254651574f211a3f4af4d55dd61a3b35f021556ced3776fb8eb389a83",
+   "release_manifest_sha256": "2f34bc4254651574f211a3f4af4d55dd61a3b35f021556ced3776fb8eb389a83"
+  },
+  {
+   "path": "data/cells_column_dictionary.json",
+   "bytes": 5044,
+   "sha256": "024498e6883a6fe70cc218edbf14270e915c423ee80360dbb05ded5b839435f1",
+   "release_manifest_sha256": "024498e6883a6fe70cc218edbf14270e915c423ee80360dbb05ded5b839435f1"
+  },
+  {
+   "path": "data/column_dictionary.json",
+   "bytes": 9421,
+   "sha256": "f1973aef6378a111bcf38b5d6706e3e9ea39f7f5315c038c7dbc34de798a4066",
+   "release_manifest_sha256": "f1973aef6378a111bcf38b5d6706e3e9ea39f7f5315c038c7dbc34de798a4066"
+  },
+  {
+   "path": "data/fraunhofer_characterisation_pointers.csv",
+   "bytes": 583615,
+   "sha256": "0091aa516751d9e883f3384994adcf1495e6e31a88a39c057be16c4ccf447d6d",
+   "release_manifest_sha256": "0091aa516751d9e883f3384994adcf1495e6e31a88a39c057be16c4ccf447d6d"
+  },
+  {
+   "path": "data/fraunhofer_characterisation_pointers_column_dictionary.json",
+   "bytes": 2198,
+   "sha256": "bac5734f4fc7abc2b98059b04ec687765b7e4b3d1db9db7bc5a56b044dba3a79",
+   "release_manifest_sha256": "bac5734f4fc7abc2b98059b04ec687765b7e4b3d1db9db7bc5a56b044dba3a79"
+  },
+  {
+   "path": "data/sources.csv",
+   "bytes": 1679,
+   "sha256": "d557e3e8aab9a7d732f0e05e2d64b67765ac5fedf2e327598443f54a5a54b7d4",
+   "release_manifest_sha256": "d557e3e8aab9a7d732f0e05e2d64b67765ac5fedf2e327598443f54a5a54b7d4"
+  },
+  {
+   "path": "data/sources_column_dictionary.json",
+   "bytes": 1782,
+   "sha256": "cd9fdc1985307bdf609cb5502fe738a45e78276380cc5b24ae0961afedac6b6a",
+   "release_manifest_sha256": "cd9fdc1985307bdf609cb5502fe738a45e78276380cc5b24ae0961afedac6b6a"
+  },
+  {
+   "path": "data/split_by_cell_column_dictionary.json",
+   "bytes": 369,
+   "sha256": "902c906595a611841c419f2376f92be8c0ef993727f57c15c19adcb4e42bf51d",
+   "release_manifest_sha256": "902c906595a611841c419f2376f92be8c0ef993727f57c15c19adcb4e42bf51d"
+  },
+  {
+   "path": "data/split_by_stack_column_dictionary.json",
+   "bytes": 598,
+   "sha256": "f7f9fe3bbc4624fe41a6b35a892647cfadb828381607d57d36471521d9920656",
+   "release_manifest_sha256": "f7f9fe3bbc4624fe41a6b35a892647cfadb828381607d57d36471521d9920656"
+  },
+  {
+   "path": "data/uncounted_cell_rows.csv",
+   "bytes": 6648,
+   "sha256": "1d4490685dde7617b2ead2b9f3586860d97c55f77f4d748f21c68331371e4610",
+   "release_manifest_sha256": "1d4490685dde7617b2ead2b9f3586860d97c55f77f4d748f21c68331371e4610"
+  },
+  {
+   "path": "data/uncounted_cell_rows_column_dictionary.json",
+   "bytes": 9400,
+   "sha256": "812acd13c401f604f0721c88bbef182ec44be5bdbc887b9f00bce9d98c0f54df",
+   "release_manifest_sha256": "812acd13c401f604f0721c88bbef182ec44be5bdbc887b9f00bce9d98c0f54df"
+  },
+  {
+   "path": "data/zsw_setpoint_holds.csv",
+   "bytes": 928391,
+   "sha256": "16b7dc9fbe79db5dc09cbbd60efa878cdd20a0425dc194fb0ba6759778f0a1fa",
+   "release_manifest_sha256": "16b7dc9fbe79db5dc09cbbd60efa878cdd20a0425dc194fb0ba6759778f0a1fa"
+  },
+  {
+   "path": "data/zsw_setpoint_holds_column_dictionary.json",
+   "bytes": 8727,
+   "sha256": "a597b559aa3adaefaa3851e009f69432fb199a84a769d3bf2d2e699342df5825",
+   "release_manifest_sha256": "a597b559aa3adaefaa3851e009f69432fb199a84a769d3bf2d2e699342df5825"
+  },
+  {
+   "path": "data.csv",
+   "bytes": 11891316,
+   "sha256": "27894e263bc370a9d97caecd1f9659bb5abb1adb996a6a657266e4826e958f11",
+   "release_manifest_sha256": "27894e263bc370a9d97caecd1f9659bb5abb1adb996a6a657266e4826e958f11"
+  },
+  {
+   "path": "exclusions.json",
+   "bytes": 8492,
+   "sha256": "4e798c0fb11424c383ad83d37f93ea07c26c6619b44eb8b922d691660241d4e4",
+   "release_manifest_sha256": "4e798c0fb11424c383ad83d37f93ea07c26c6619b44eb8b922d691660241d4e4"
+  },
+  {
+   "path": "LICENSE.txt",
+   "bytes": 1447,
+   "sha256": "82acb22139489b8506f30f9dcf2b15cd6f8e015aac0a159ba9ea073f8c93e5d0",
+   "release_manifest_sha256": "82acb22139489b8506f30f9dcf2b15cd6f8e015aac0a159ba9ea073f8c93e5d0"
+  },
+  {
+   "path": "NOTICE.txt",
+   "bytes": 6009,
+   "sha256": "d53ac568ba57e4a51b3fa2fbf9406e937f452a25f90fc86b9153c37abc7052fb",
+   "release_manifest_sha256": "d53ac568ba57e4a51b3fa2fbf9406e937f452a25f90fc86b9153c37abc7052fb"
+  },
+  {
+   "path": "proof/FACTS.json",
+   "bytes": 6734,
+   "sha256": "87efaa686697086497d3d7218bc124ac27d095a8f3782c4b0caa3a501b093f43",
+   "release_manifest_sha256": "87efaa686697086497d3d7218bc124ac27d095a8f3782c4b0caa3a501b093f43"
+  },
+  {
+   "path": "proof/MANIFEST.json",
+   "bytes": 4708,
+   "sha256": "8cf1b5f6776ac0e774951b113e050f04dfce9552e0a2500f6dfaaf27f161a6db",
+   "release_manifest_sha256": null
+  },
+  {
+   "path": "README.md",
+   "bytes": 8746,
+   "sha256": "1aa166895676c313eccd24ab1d326b3f73f0f7596d916e8a66f22e4e72fed6b9",
+   "release_manifest_sha256": "1aa166895676c313eccd24ab1d326b3f73f0f7596d916e8a66f22e4e72fed6b9",
+   "mirror_path": "docs/RELEASE_README.md"
+  },
+  {
+   "path": "release_meta.json",
+   "bytes": 18877,
+   "sha256": "8eda542f9321c5d8dc67703e659f995b3e88c25254f37eaf52db2afa92593d5e",
+   "release_manifest_sha256": "8eda542f9321c5d8dc67703e659f995b3e88c25254f37eaf52db2afa92593d5e"
+  },
+  {
+   "path": "split_by_cell.csv",
+   "bytes": 1405,
+   "sha256": "0be10817e803d00cf70816953c99f8034bce4f30b435b4f43920bb364c183e85",
+   "release_manifest_sha256": "0be10817e803d00cf70816953c99f8034bce4f30b435b4f43920bb364c183e85"
+  },
+  {
+   "path": "split_by_stack.csv",
+   "bytes": 2338,
+   "sha256": "74824de94d220a6a3b157d4f5b37d667c71b165fef17e31f55d06fa1e3812913",
+   "release_manifest_sha256": "74824de94d220a6a3b157d4f5b37d667c71b165fef17e31f55d06fa1e3812913"
+  }
+ ],
+ "release_assets": [],
+ "left_out": [
+  {
+   "path": "CHANGELOG.md",
+   "bytes": 18386,
+   "reason": "change history; the version is stated in README.md"
+  },
+  {
+   "path": "code_sha256_manifest.json",
+   "bytes": 1168,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "counts.json",
+   "bytes": 14666,
+   "reason": "build provenance record; in the archival release only"
+  },
+  {
+   "path": "croissant_build.log",
+   "bytes": 712,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "croissant_validate.log",
+   "bytes": 712,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "proof/recompute_facts.py",
+   "bytes": 9676,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "rebuild/expected_raw_sha256.json",
+   "bytes": 6411,
+   "reason": "code; in the archival release only"
+  },
+  {
+   "path": "rebuild/rebuild_dpo04.py",
+   "bytes": 59686,
+   "reason": "code or build log; in the archival release only"
+  },
+  {
+   "path": "rebuild/REBUILD_RESULT.json",
+   "bytes": 1707,
+   "reason": "code; in the archival release only"
+  },
+  {
+   "path": "verify_release.py",
+   "bytes": 3262,
+   "reason": "code or build log; in the archival release only"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+Licence of this deposit: Creative Commons Attribution 4.0 International (CC-BY-4.0) <https://creativecommons.org/licenses/by/4.0/>
+
+Why: every byte in this variant comes from the four CC BY 4.0 sources; the FCLAB base (CC BY-NC-SA 3.0) is NOT included and is fetched by the user with the recipe in README.md, so no NonCommercial or ShareAlike condition attaches
+
+Upstream sources, each with its own licence, creators, identifiers and requested citation, are listed in NOTICE.txt:
+  SRC-357  Fraunhofer Institute for Solar Energy Systems ISE with Toyota Research Institute (Schneider, Scherzer, Ney, Kwon, Storey, Gerteisen, Zamel)  CC-BY-4.0 <https://creativecommons.org/licenses/by/4.0/>  doi:10.6084/m9.figshare.25450177
+  SRC-358  RWTH Aachen University (Paul Thiele, Yue Yang, Steffen Dirkes) - RealAgeing dataset  CC-BY-4.0 <https://creativecommons.org/licenses/by/4.0/>  doi:10.5281/zenodo.13166135
+  SRC-359  Politecnico di Milano (Elena Colombo, Andrea Baricci, Andrea Bisello)  CC-BY-4.0 <https://creativecommons.org/licenses/by/4.0/>  doi:10.5281/zenodo.7054555
+  SRC-360  Zentrum fuer Sonnenenergie- und Wasserstoff-Forschung Baden-Wuerttemberg (Eva Fensterle, Juergen Hunger, Frank Rabsahl)  CC-BY-4.0 <https://creativecommons.org/licenses/by/4.0/>  doi:10.5281/zenodo.20715542
+
+Attribution is required by every upstream licence; no NonCommercial or ShareAlike condition attaches to this variant (every input is CC BY 4.0).

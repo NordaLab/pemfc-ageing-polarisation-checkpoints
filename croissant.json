@@ -1,0 +1,2337 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataBiases": "cr:dataBiases",
+    "dataCollection": "cr:dataCollection",
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "personalSensitiveInformation": "cr:personalSensitiveInformation",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "@base": "cr_base_iri/"
+  },
+  "@type": "sc:Dataset",
+  "name": "PEM fuel cell durability collection: polarisation curves at ageing checkpoints (CC BY variant)",
+  "description": "Tables: data.csv (the polarisation checkpoints of the four extension sources), data/cells.csv (one row per cell, with the Fraunhofer cathode and stressor parameters per cell and each source's DOI), data/sources.csv (one row per input: identifier, custodian, title, DOI, landing page, licence), data/zsw_setpoint_holds.csv (the ZSW set-point holds: last-30-s means per set point and direction, with the JRC 7.1 station columns), data/fraunhofer_characterisation_pointers.csv (where each EIS, CV, LSV and limiting-current file of the counted Fraunhofer cells sits in the custodian's archives; those files are not carried), data/uncounted_cell_rows.csv (the one-checkpoint PoliMi cell, not counted), split_by_cell.csv and split_by_stack.csv; every other file under data/ is a column dictionary listed in the release record with role schema.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "AGIL Lab, PEM fuel cell durability collection: polarisation curves at ageing checkpoints, version 1.4.0, 2026; see NOTICE.txt for the upstream citations",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://agil-lab.invalid/not-yet-deposited/DPO-04_ccby",
+  "version": "1.4.0",
+  "datePublished": "2026-09-28",
+  "creator": {
+    "@type": "sc:Organization",
+    "name": "AGIL Lab"
+  },
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "file-0",
+      "name": "data.csv",
+      "description": "Released data file.",
+      "contentUrl": "https://agil-lab.invalid/not-yet-deposited/DPO-04_ccby/data.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "27894e263bc370a9d97caecd1f9659bb5abb1adb996a6a657266e4826e958f11",
+      "contentSize": "11891316 B"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file-1",
+      "name": "cells.csv",
+      "description": "Released data file.",
+      "contentUrl": "https://agil-lab.invalid/not-yet-deposited/DPO-04_ccby/cells.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "2f34bc4254651574f211a3f4af4d55dd61a3b35f021556ced3776fb8eb389a83",
+      "contentSize": "17378 B"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file-2",
+      "name": "split_by_cell.csv",
+      "description": "Released data file.",
+      "contentUrl": "https://agil-lab.invalid/not-yet-deposited/DPO-04_ccby/split_by_cell.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "0be10817e803d00cf70816953c99f8034bce4f30b435b4f43920bb364c183e85",
+      "contentSize": "1405 B"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file-3",
+      "name": "sources.csv",
+      "description": "Released data file.",
+      "contentUrl": "https://agil-lab.invalid/not-yet-deposited/DPO-04_ccby/sources.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "d557e3e8aab9a7d732f0e05e2d64b67765ac5fedf2e327598443f54a5a54b7d4",
+      "contentSize": "1679 B"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file-4",
+      "name": "zsw_setpoint_holds.csv",
+      "description": "Released data file.",
+      "contentUrl": "https://agil-lab.invalid/not-yet-deposited/DPO-04_ccby/zsw_setpoint_holds.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "16b7dc9fbe79db5dc09cbbd60efa878cdd20a0425dc194fb0ba6759778f0a1fa",
+      "contentSize": "928391 B"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file-5",
+      "name": "fraunhofer_characterisation_pointers.csv",
+      "description": "Released data file.",
+      "contentUrl": "https://agil-lab.invalid/not-yet-deposited/DPO-04_ccby/fraunhofer_characterisation_pointers.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "0091aa516751d9e883f3384994adcf1495e6e31a88a39c057be16c4ccf447d6d",
+      "contentSize": "583615 B"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file-6",
+      "name": "uncounted_cell_rows.csv",
+      "description": "Released data file.",
+      "contentUrl": "https://agil-lab.invalid/not-yet-deposited/DPO-04_ccby/uncounted_cell_rows.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "1d4490685dde7617b2ead2b9f3586860d97c55f77f4d748f21c68331371e4610",
+      "contentSize": "6648 B"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "file-7",
+      "name": "split_by_stack.csv",
+      "description": "Released data file.",
+      "contentUrl": "https://agil-lab.invalid/not-yet-deposited/DPO-04_ccby/split_by_stack.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "74824de94d220a6a3b157d4f5b37d667c71b165fef17e31f55d06fa1e3812913",
+      "contentSize": "2338 B"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "file-0/records",
+      "name": "data",
+      "description": "Records of data.csv.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/record_id",
+          "name": "record_id",
+          "description": "Column record_id, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "record_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/source_key",
+          "name": "source_key",
+          "description": "Column source_key, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "source_key"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/custodian",
+          "name": "custodian",
+          "description": "Column custodian, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "custodian"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/cell_id",
+          "name": "cell_id",
+          "description": "Column cell_id, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "cell_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/cell_id_local",
+          "name": "cell_id_local",
+          "description": "Column cell_id_local, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "cell_id_local"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/stack_id",
+          "name": "stack_id",
+          "description": "Column stack_id, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "stack_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/checkpoint_index",
+          "name": "checkpoint_index",
+          "description": "Column checkpoint_index, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "checkpoint_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/checkpoint_kind",
+          "name": "checkpoint_kind",
+          "description": "Column checkpoint_kind, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "checkpoint_kind"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/recovery_event_index",
+          "name": "recovery_event_index",
+          "description": "Column recovery_event_index, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "recovery_event_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/ageing_hours",
+          "name": "ageing_hours",
+          "description": "Column ageing_hours, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "ageing_hours"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/ageing_cycles",
+          "name": "ageing_cycles",
+          "description": "Column ageing_cycles, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "ageing_cycles"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/ageing_protocol",
+          "name": "ageing_protocol",
+          "description": "Column ageing_protocol, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "ageing_protocol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/condition_label",
+          "name": "condition_label",
+          "description": "Column condition_label, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "condition_label"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/rh_pct",
+          "name": "rh_pct",
+          "description": "Column rh_pct, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "rh_pct"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/temperature_C",
+          "name": "temperature_C",
+          "description": "Column temperature_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "temperature_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/dewpoint_anode_C",
+          "name": "dewpoint_anode_C",
+          "description": "Column dewpoint_anode_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "dewpoint_anode_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/dewpoint_cathode_C",
+          "name": "dewpoint_cathode_C",
+          "description": "Column dewpoint_cathode_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "dewpoint_cathode_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/pressure_anode_kPa",
+          "name": "pressure_anode_kPa",
+          "description": "Column pressure_anode_kPa, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "pressure_anode_kPa"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/pressure_cathode_kPa",
+          "name": "pressure_cathode_kPa",
+          "description": "Column pressure_cathode_kPa, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "pressure_cathode_kPa"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/pressure_reference",
+          "name": "pressure_reference",
+          "description": "Column pressure_reference, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "pressure_reference"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/stoich_anode",
+          "name": "stoich_anode",
+          "description": "Column stoich_anode, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "stoich_anode"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/stoich_cathode",
+          "name": "stoich_cathode",
+          "description": "Column stoich_cathode, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "stoich_cathode"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/conditions_source",
+          "name": "conditions_source",
+          "description": "Column conditions_source, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "conditions_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/point_index",
+          "name": "point_index",
+          "description": "Column point_index, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "point_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/current_density_A_cm2",
+          "name": "current_density_A_cm2",
+          "description": "Column current_density_A_cm2, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "current_density_A_cm2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/cell_voltage_V",
+          "name": "cell_voltage_V",
+          "description": "Column cell_voltage_V, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "cell_voltage_V"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/n_samples_in_bin",
+          "name": "n_samples_in_bin",
+          "description": "Column n_samples_in_bin, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "n_samples_in_bin"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/dwell_s",
+          "name": "dwell_s",
+          "description": "Column dwell_s, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "dwell_s"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/measurement_kind",
+          "name": "measurement_kind",
+          "description": "Column measurement_kind, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "measurement_kind"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/controlled_variable",
+          "name": "controlled_variable",
+          "description": "Column controlled_variable, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "controlled_variable"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-0/source_file",
+          "name": "source_file",
+          "description": "Column source_file, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-0"
+            },
+            "extract": {
+              "column": "source_file"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "file-1/records",
+      "name": "cells",
+      "description": "Records of cells.csv.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/cell_id",
+          "name": "cell_id",
+          "description": "Column cell_id, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "cell_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/source_key",
+          "name": "source_key",
+          "description": "Column source_key, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "source_key"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/custodian",
+          "name": "custodian",
+          "description": "Column custodian, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "custodian"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/n_rows",
+          "name": "n_rows",
+          "description": "Column n_rows, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "n_rows"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/n_checkpoints",
+          "name": "n_checkpoints",
+          "description": "Column n_checkpoints, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "n_checkpoints"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/n_recovery_event_checkpoints",
+          "name": "n_recovery_event_checkpoints",
+          "description": "Column n_recovery_event_checkpoints, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "n_recovery_event_checkpoints"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/j_max",
+          "name": "j_max",
+          "description": "Column j_max, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "j_max"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/v_min",
+          "name": "v_min",
+          "description": "Column v_min, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "v_min"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/v_max",
+          "name": "v_max",
+          "description": "Column v_max, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "v_max"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/counted",
+          "name": "counted",
+          "description": "Column counted, dtype bool as parsed from the released file.",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "counted"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/pt_load_mg_cm2",
+          "name": "pt_load_mg_cm2",
+          "description": "Column pt_load_mg_cm2, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "pt_load_mg_cm2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/ionomer_to_carbon_ratio",
+          "name": "ionomer_to_carbon_ratio",
+          "description": "Column ionomer_to_carbon_ratio, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "ionomer_to_carbon_ratio"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/ionomer_ew_g_mol",
+          "name": "ionomer_ew_g_mol",
+          "description": "Column ionomer_ew_g_mol, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "ionomer_ew_g_mol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/pt_on_carbon_pct",
+          "name": "pt_on_carbon_pct",
+          "description": "Column pt_on_carbon_pct, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "pt_on_carbon_pct"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/catalyst_type",
+          "name": "catalyst_type",
+          "description": "Column catalyst_type, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "catalyst_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/support_type",
+          "name": "support_type",
+          "description": "Column support_type, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "support_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/ast_upper_potential_limit_V",
+          "name": "ast_upper_potential_limit_V",
+          "description": "Column ast_upper_potential_limit_V, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "ast_upper_potential_limit_V"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/ast_rh_pct",
+          "name": "ast_rh_pct",
+          "description": "Column ast_rh_pct, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "ast_rh_pct"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/material_variation",
+          "name": "material_variation",
+          "description": "Column material_variation, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "material_variation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/ast_variation",
+          "name": "ast_variation",
+          "description": "Column ast_variation, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "ast_variation"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/source_doi",
+          "name": "source_doi",
+          "description": "Column source_doi, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "source_doi"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-1/source_landing_url",
+          "name": "source_landing_url",
+          "description": "Column source_landing_url, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-1"
+            },
+            "extract": {
+              "column": "source_landing_url"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "file-2/records",
+      "name": "split_by_cell",
+      "description": "Records of split_by_cell.csv.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "file-2/cell_id",
+          "name": "cell_id",
+          "description": "Column cell_id, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-2"
+            },
+            "extract": {
+              "column": "cell_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-2/split",
+          "name": "split",
+          "description": "Column split, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-2"
+            },
+            "extract": {
+              "column": "split"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "file-3/records",
+      "name": "sources",
+      "description": "Records of sources.csv.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "file-3/source_key",
+          "name": "source_key",
+          "description": "Column source_key, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-3"
+            },
+            "extract": {
+              "column": "source_key"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-3/source_id",
+          "name": "source_id",
+          "description": "Column source_id, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-3"
+            },
+            "extract": {
+              "column": "source_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-3/role",
+          "name": "role",
+          "description": "Column role, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-3"
+            },
+            "extract": {
+              "column": "role"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-3/custodian",
+          "name": "custodian",
+          "description": "Column custodian, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-3"
+            },
+            "extract": {
+              "column": "custodian"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-3/title",
+          "name": "title",
+          "description": "Column title, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-3"
+            },
+            "extract": {
+              "column": "title"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-3/doi",
+          "name": "doi",
+          "description": "Column doi, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-3"
+            },
+            "extract": {
+              "column": "doi"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-3/landing_url",
+          "name": "landing_url",
+          "description": "Column landing_url, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-3"
+            },
+            "extract": {
+              "column": "landing_url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-3/licence_spdx",
+          "name": "licence_spdx",
+          "description": "Column licence_spdx, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-3"
+            },
+            "extract": {
+              "column": "licence_spdx"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-3/licence_uri",
+          "name": "licence_uri",
+          "description": "Column licence_uri, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-3"
+            },
+            "extract": {
+              "column": "licence_uri"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "file-4/records",
+      "name": "zsw_setpoint_holds",
+      "description": "Records of zsw_setpoint_holds.csv.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/cell_id",
+          "name": "cell_id",
+          "description": "Column cell_id, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "cell_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/cell_id_local",
+          "name": "cell_id_local",
+          "description": "Column cell_id_local, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "cell_id_local"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/ageing_hours",
+          "name": "ageing_hours",
+          "description": "Column ageing_hours, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "ageing_hours"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/checkpoint_kind",
+          "name": "checkpoint_kind",
+          "description": "Column checkpoint_kind, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "checkpoint_kind"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/source_file",
+          "name": "source_file",
+          "description": "Column source_file, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "source_file"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/hold_index",
+          "name": "hold_index",
+          "description": "Column hold_index, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "hold_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/set_point_A",
+          "name": "set_point_A",
+          "description": "Column set_point_A, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "set_point_A"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/direction",
+          "name": "direction",
+          "description": "Column direction, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "direction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/hold_dwell_s",
+          "name": "hold_dwell_s",
+          "description": "Column hold_dwell_s, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "hold_dwell_s"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/n_samples_last_30s",
+          "name": "n_samples_last_30s",
+          "description": "Column n_samples_last_30s, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "n_samples_last_30s"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/current_density_A_cm2",
+          "name": "current_density_A_cm2",
+          "description": "Column current_density_A_cm2, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "current_density_A_cm2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/cell_voltage_V",
+          "name": "cell_voltage_V",
+          "description": "Column cell_voltage_V, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "cell_voltage_V"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/voltage_spread_last_30s_V",
+          "name": "voltage_spread_last_30s_V",
+          "description": "Column voltage_spread_last_30s_V, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "voltage_spread_last_30s_V"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/voltage_deviation_last_120s_V",
+          "name": "voltage_deviation_last_120s_V",
+          "description": "Column voltage_deviation_last_120s_V, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "voltage_deviation_last_120s_V"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/stable_pm5mV_over_last_120s",
+          "name": "stable_pm5mV_over_last_120s",
+          "description": "Column stable_pm5mV_over_last_120s, dtype bool as parsed from the released file.",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "stable_pm5mV_over_last_120s"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/event_note",
+          "name": "event_note",
+          "description": "Column event_note, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "event_note"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/temperature_C",
+          "name": "temperature_C",
+          "description": "Column temperature_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "temperature_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/dewpoint_anode_C",
+          "name": "dewpoint_anode_C",
+          "description": "Column dewpoint_anode_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "dewpoint_anode_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/dewpoint_cathode_C",
+          "name": "dewpoint_cathode_C",
+          "description": "Column dewpoint_cathode_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "dewpoint_cathode_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/pressure_anode_kPa",
+          "name": "pressure_anode_kPa",
+          "description": "Column pressure_anode_kPa, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "pressure_anode_kPa"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/pressure_cathode_kPa",
+          "name": "pressure_cathode_kPa",
+          "description": "Column pressure_cathode_kPa, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "pressure_cathode_kPa"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/stoich_anode",
+          "name": "stoich_anode",
+          "description": "Column stoich_anode, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "stoich_anode"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/stoich_cathode",
+          "name": "stoich_cathode",
+          "description": "Column stoich_cathode, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "stoich_cathode"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/anode_inlet_temperature_C",
+          "name": "anode_inlet_temperature_C",
+          "description": "Column anode_inlet_temperature_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "anode_inlet_temperature_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/anode_outlet_temperature_C",
+          "name": "anode_outlet_temperature_C",
+          "description": "Column anode_outlet_temperature_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "anode_outlet_temperature_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/cathode_inlet_temperature_C",
+          "name": "cathode_inlet_temperature_C",
+          "description": "Column cathode_inlet_temperature_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "cathode_inlet_temperature_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/cathode_outlet_temperature_C",
+          "name": "cathode_outlet_temperature_C",
+          "description": "Column cathode_outlet_temperature_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "cathode_outlet_temperature_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/coolant_outlet_temperature_C",
+          "name": "coolant_outlet_temperature_C",
+          "description": "Column coolant_outlet_temperature_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "coolant_outlet_temperature_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/pressure_anode_outlet_kPa",
+          "name": "pressure_anode_outlet_kPa",
+          "description": "Column pressure_anode_outlet_kPa, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "pressure_anode_outlet_kPa"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/pressure_cathode_outlet_kPa",
+          "name": "pressure_cathode_outlet_kPa",
+          "description": "Column pressure_cathode_outlet_kPa, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "pressure_cathode_outlet_kPa"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/flow_h2_anode_nl_min",
+          "name": "flow_h2_anode_nl_min",
+          "description": "Column flow_h2_anode_nl_min, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "flow_h2_anode_nl_min"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/flow_air_cathode_nl_min",
+          "name": "flow_air_cathode_nl_min",
+          "description": "Column flow_air_cathode_nl_min, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "flow_air_cathode_nl_min"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/flow_coolant_l_min",
+          "name": "flow_coolant_l_min",
+          "description": "Column flow_coolant_l_min, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "flow_coolant_l_min"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/custodian_OpHrs_h",
+          "name": "custodian_OpHrs_h",
+          "description": "Column custodian_OpHrs_h, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "custodian_OpHrs_h"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-4/custodian_OpHrs2_h",
+          "name": "custodian_OpHrs2_h",
+          "description": "Column custodian_OpHrs2_h, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-4"
+            },
+            "extract": {
+              "column": "custodian_OpHrs2_h"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "file-5/records",
+      "name": "fraunhofer_characterisation_pointers",
+      "description": "Records of fraunhofer_characterisation_pointers.csv.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "file-5/cell_id",
+          "name": "cell_id",
+          "description": "Column cell_id, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-5"
+            },
+            "extract": {
+              "column": "cell_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-5/source_archive",
+          "name": "source_archive",
+          "description": "Column source_archive, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-5"
+            },
+            "extract": {
+              "column": "source_archive"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-5/archive_member",
+          "name": "archive_member",
+          "description": "Column archive_member, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-5"
+            },
+            "extract": {
+              "column": "archive_member"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-5/method",
+          "name": "method",
+          "description": "Column method, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-5"
+            },
+            "extract": {
+              "column": "method"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-5/rh_pct",
+          "name": "rh_pct",
+          "description": "Column rh_pct, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-5"
+            },
+            "extract": {
+              "column": "rh_pct"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-5/set_point",
+          "name": "set_point",
+          "description": "Column set_point, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-5"
+            },
+            "extract": {
+              "column": "set_point"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-5/ageing_cycles",
+          "name": "ageing_cycles",
+          "description": "Column ageing_cycles, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-5"
+            },
+            "extract": {
+              "column": "ageing_cycles"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-5/member_bytes",
+          "name": "member_bytes",
+          "description": "Column member_bytes, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-5"
+            },
+            "extract": {
+              "column": "member_bytes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-5/member_crc32",
+          "name": "member_crc32",
+          "description": "Column member_crc32, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-5"
+            },
+            "extract": {
+              "column": "member_crc32"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "file-6/records",
+      "name": "uncounted_cell_rows",
+      "description": "Records of uncounted_cell_rows.csv.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/record_id",
+          "name": "record_id",
+          "description": "Column record_id, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "record_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/source_key",
+          "name": "source_key",
+          "description": "Column source_key, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "source_key"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/custodian",
+          "name": "custodian",
+          "description": "Column custodian, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "custodian"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/cell_id",
+          "name": "cell_id",
+          "description": "Column cell_id, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "cell_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/cell_id_local",
+          "name": "cell_id_local",
+          "description": "Column cell_id_local, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "cell_id_local"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/stack_id",
+          "name": "stack_id",
+          "description": "Column stack_id, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "stack_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/checkpoint_index",
+          "name": "checkpoint_index",
+          "description": "Column checkpoint_index, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "checkpoint_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/checkpoint_kind",
+          "name": "checkpoint_kind",
+          "description": "Column checkpoint_kind, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "checkpoint_kind"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/recovery_event_index",
+          "name": "recovery_event_index",
+          "description": "Column recovery_event_index, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "recovery_event_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/ageing_hours",
+          "name": "ageing_hours",
+          "description": "Column ageing_hours, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "ageing_hours"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/ageing_cycles",
+          "name": "ageing_cycles",
+          "description": "Column ageing_cycles, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "ageing_cycles"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/ageing_protocol",
+          "name": "ageing_protocol",
+          "description": "Column ageing_protocol, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "ageing_protocol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/condition_label",
+          "name": "condition_label",
+          "description": "Column condition_label, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "condition_label"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/rh_pct",
+          "name": "rh_pct",
+          "description": "Column rh_pct, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "rh_pct"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/temperature_C",
+          "name": "temperature_C",
+          "description": "Column temperature_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "temperature_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/dewpoint_anode_C",
+          "name": "dewpoint_anode_C",
+          "description": "Column dewpoint_anode_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "dewpoint_anode_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/dewpoint_cathode_C",
+          "name": "dewpoint_cathode_C",
+          "description": "Column dewpoint_cathode_C, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "dewpoint_cathode_C"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/pressure_anode_kPa",
+          "name": "pressure_anode_kPa",
+          "description": "Column pressure_anode_kPa, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "pressure_anode_kPa"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/pressure_cathode_kPa",
+          "name": "pressure_cathode_kPa",
+          "description": "Column pressure_cathode_kPa, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "pressure_cathode_kPa"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/pressure_reference",
+          "name": "pressure_reference",
+          "description": "Column pressure_reference, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "pressure_reference"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/stoich_anode",
+          "name": "stoich_anode",
+          "description": "Column stoich_anode, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "stoich_anode"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/stoich_cathode",
+          "name": "stoich_cathode",
+          "description": "Column stoich_cathode, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "stoich_cathode"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/conditions_source",
+          "name": "conditions_source",
+          "description": "Column conditions_source, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "conditions_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/point_index",
+          "name": "point_index",
+          "description": "Column point_index, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "point_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/current_density_A_cm2",
+          "name": "current_density_A_cm2",
+          "description": "Column current_density_A_cm2, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "current_density_A_cm2"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/cell_voltage_V",
+          "name": "cell_voltage_V",
+          "description": "Column cell_voltage_V, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "cell_voltage_V"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/n_samples_in_bin",
+          "name": "n_samples_in_bin",
+          "description": "Column n_samples_in_bin, dtype int64 as parsed from the released file.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "n_samples_in_bin"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/dwell_s",
+          "name": "dwell_s",
+          "description": "Column dwell_s, dtype float64 as parsed from the released file.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "dwell_s"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/measurement_kind",
+          "name": "measurement_kind",
+          "description": "Column measurement_kind, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "measurement_kind"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/controlled_variable",
+          "name": "controlled_variable",
+          "description": "Column controlled_variable, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "controlled_variable"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-6/source_file",
+          "name": "source_file",
+          "description": "Column source_file, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-6"
+            },
+            "extract": {
+              "column": "source_file"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "file-7/records",
+      "name": "split_by_stack",
+      "description": "Records of split_by_stack.csv.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "file-7/cell_id",
+          "name": "cell_id",
+          "description": "Column cell_id, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-7"
+            },
+            "extract": {
+              "column": "cell_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-7/group",
+          "name": "group",
+          "description": "Column group, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-7"
+            },
+            "extract": {
+              "column": "group"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "file-7/split",
+          "name": "split",
+          "description": "Column split, dtype str as parsed from the released file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "file-7"
+            },
+            "extract": {
+              "column": "split"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

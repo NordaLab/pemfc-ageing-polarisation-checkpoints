@@ -1,0 +1,250 @@
+{
+ "record_id": {
+  "name": "record_id",
+  "description": "one row of the released table",
+  "unit": "identifier",
+  "provenance": "assigned by build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "source_key": {
+  "name": "source_key",
+  "description": "which custodian the row comes from (four in the CC BY deposit, five in the union)",
+  "unit": "categorical",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "custodian": {
+  "name": "custodian",
+  "description": "the laboratory that produced and published the measurement",
+  "unit": "text",
+  "provenance": "SOURCE record",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "cell_id": {
+  "name": "cell_id",
+  "description": "the cell, unique across the collection; the primary entity",
+  "unit": "identifier",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "cell_id_local": {
+  "name": "cell_id_local",
+  "description": "the cell's name in the custodian's own files (U1, Cell10, CCM B, U.C)",
+  "unit": "text",
+  "provenance": "custodian file header",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "stack_id": {
+  "name": "stack_id",
+  "description": "the stack the cell belongs to, where the source names one",
+  "unit": "text",
+  "provenance": "custodian file path",
+  "dtype_observed": "str",
+  "n_null": 7278
+ },
+ "checkpoint_index": {
+  "name": "checkpoint_index",
+  "description": "rank of the ordinary ageing checkpoint within the cell, 1 = beginning of test; null on a recovery-event curve (see checkpoint_kind)",
+  "unit": "ordinal",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "Int64",
+  "n_null": 1820
+ },
+ "checkpoint_kind": {
+  "name": "checkpoint_kind",
+  "description": "ageing for an ordinary ageing checkpoint; recovery_event for a curve the custodian recorded after a recovery event its file name names (ZSW files ending _afterAirAirStart: a passive air/air start-up, then an extra nominal curve that measures reversible losses); a recovery-event curve is not an ageing checkpoint and is not counted as one",
+  "unit": "categorical",
+  "provenance": "custodian file name",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "recovery_event_index": {
+  "name": "recovery_event_index",
+  "description": "rank of the recovery-event curve within the cell in time order; null on an ordinary ageing checkpoint",
+  "unit": "ordinal",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "Int64",
+  "n_null": 16616
+ },
+ "ageing_hours": {
+  "name": "ageing_hours",
+  "description": "operating hours at the checkpoint, for hours-based protocols; null for cycle-based",
+  "unit": "h",
+  "provenance": "custodian file name or column",
+  "dtype_observed": "float64",
+  "n_null": 8364
+ },
+ "ageing_cycles": {
+  "name": "ageing_cycles",
+  "description": "accelerated-stress or drive cycles at the checkpoint, for cycle-based protocols; null for hours-based",
+  "unit": "cycles",
+  "provenance": "custodian file name",
+  "dtype_observed": "float64",
+  "n_null": 10072
+ },
+ "ageing_protocol": {
+  "name": "ageing_protocol",
+  "description": "how the cell was aged, as the custodian describes it",
+  "unit": "text",
+  "provenance": "custodian documentation",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "condition_label": {
+  "name": "condition_label",
+  "description": "operating condition of the polarisation measurement, as the custodian labels it",
+  "unit": "text",
+  "provenance": "custodian file path",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "rh_pct": {
+  "name": "rh_pct",
+  "description": "relative humidity of the reactant stream where the custodian states it; FCLAB (union only): air inlet RH from the ageing series; null otherwise",
+  "unit": "percent",
+  "provenance": "see conditions_source",
+  "dtype_observed": "float64",
+  "n_null": 10072
+ },
+ "temperature_C": {
+  "name": "temperature_C",
+  "description": "cell operating temperature as the custodian records it: ZSW coolant inlet T.Si.CL (set point 70 C), RWTH and Fraunhofer the stated cell temperature, FCLAB cooling-water outlet; null where not recorded",
+  "unit": "degC",
+  "provenance": "see conditions_source",
+  "dtype_observed": "float64",
+  "n_null": 62
+ },
+ "dewpoint_anode_C": {
+  "name": "dewpoint_anode_C",
+  "description": "anode inlet dew point where recorded per row (ZSW); null otherwise",
+  "unit": "degC",
+  "provenance": "custodian column DPT.Si.A",
+  "dtype_observed": "float64",
+  "n_null": 8426
+ },
+ "dewpoint_cathode_C": {
+  "name": "dewpoint_cathode_C",
+  "description": "cathode inlet dew point where recorded per row (ZSW); null otherwise",
+  "unit": "degC",
+  "provenance": "custodian column DPT.Si.C",
+  "dtype_observed": "float64",
+  "n_null": 8426
+ },
+ "pressure_anode_kPa": {
+  "name": "pressure_anode_kPa",
+  "description": "anode inlet pressure in the reference pressure_reference names; null where not recorded or where the custodian states a range (Fraunhofer between-cycling checkpoints: '1 - 2' bara)",
+  "unit": "kPa",
+  "provenance": "see conditions_source",
+  "dtype_observed": "float64",
+  "n_null": 3631
+ },
+ "pressure_cathode_kPa": {
+  "name": "pressure_cathode_kPa",
+  "description": "cathode inlet pressure in the reference pressure_reference names; null where not recorded",
+  "unit": "kPa",
+  "provenance": "see conditions_source",
+  "dtype_observed": "float64",
+  "n_null": 2483
+ },
+ "pressure_reference": {
+  "name": "pressure_reference",
+  "description": "gauge or absolute, as the custodian's unit states; 'not stated' where the custodian gives bar without saying",
+  "unit": "text",
+  "provenance": "custodian unit",
+  "dtype_observed": "str",
+  "n_null": 62
+ },
+ "stoich_anode": {
+  "name": "stoich_anode",
+  "description": "anode stoichiometry where recorded (ZSW per row); null otherwise",
+  "unit": "ratio",
+  "provenance": "custodian column Stoic.S.A",
+  "dtype_observed": "float64",
+  "n_null": 8426
+ },
+ "stoich_cathode": {
+  "name": "stoich_cathode",
+  "description": "cathode stoichiometry where recorded (ZSW per row, RWTH from the operating parameter sheet); null otherwise",
+  "unit": "ratio",
+  "provenance": "see conditions_source",
+  "dtype_observed": "float64",
+  "n_null": 7278
+ },
+ "conditions_source": {
+  "name": "conditions_source",
+  "description": "where the condition values on this row come from, or why they are null",
+  "unit": "text",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "point_index": {
+  "name": "point_index",
+  "description": "order of the point within its checkpoint file. Point tables (Fraunhofer, RWTH, PoliMi) visit one current density ascending and descending and both points are kept under distinct point_index; binned rows (FCLAB, ZSW) hold one point per bin, so point_index is 1 for them",
+  "unit": "ordinal",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "int64",
+  "n_null": 0
+ },
+ "current_density_A_cm2": {
+  "name": "current_density_A_cm2",
+  "description": "current density; for FCLAB and ZSW the median of a 0.02 A/cm2 bin of the sweep",
+  "unit": "A/cm2",
+  "provenance": "custodian column, binned by build_dpo04_pemfc.py where noted",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "cell_voltage_V": {
+  "name": "cell_voltage_V",
+  "description": "cell voltage; RWTH mV converted to V; for sweeps the median within the bin",
+  "unit": "V",
+  "provenance": "custodian column",
+  "dtype_observed": "float64",
+  "n_null": 0
+ },
+ "n_samples_in_bin": {
+  "name": "n_samples_in_bin",
+  "description": "samples aggregated into the row: 1 for point tables, more for binned sweeps",
+  "unit": "count",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "int64",
+  "n_null": 0
+ },
+ "dwell_s": {
+  "name": "dwell_s",
+  "description": "time the sweep spent in the bin: ZSW from the file's clock (samples times the median sampling interval); FCLAB ESTIMATED as the bin's share of the file's samples times the custodian's stated 1000 s sweep (measurement_kind says so; the files hold more samples than one rate over 1000 s, the surplus at open circuit, so the estimate is a share, not a clock); null for point tables",
+  "unit": "s",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "float64",
+  "n_null": 8426
+ },
+ "measurement_kind": {
+  "name": "measurement_kind",
+  "description": "polarisation_points or binned_from_sweep, with any unit conversion named; for FCLAB it also says that dwell_s is estimated from the custodian's stated 1000 s sweep",
+  "unit": "text",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "controlled_variable": {
+  "name": "controlled_variable",
+  "description": "which quantity the custodian's station set at each point: current density (galvanostatic) or cell voltage (potentiostatic; Fraunhofer's released points sit on a voltage grid)",
+  "unit": "text",
+  "provenance": "custodian protocol and the released grid",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "source_file": {
+  "name": "source_file",
+  "description": "the custodian file (and archive) the row was read from",
+  "unit": "text",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ }
+}

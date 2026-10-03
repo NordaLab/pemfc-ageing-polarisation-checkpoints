@@ -1,0 +1,74 @@
+{
+ "cell_id": {
+  "name": "cell_id",
+  "unit": "identifier",
+  "description": "the counted Fraunhofer cell",
+  "provenance": "build_dpo04_pemfc.py",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "source_archive": {
+  "name": "source_archive",
+  "unit": "text",
+  "description": "the custodian archive (figshare 10.6084/m9.figshare.25450177.v1) that holds the file",
+  "provenance": "custodian file name",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "archive_member": {
+  "name": "archive_member",
+  "unit": "text",
+  "description": "the file's path inside the archive",
+  "provenance": "custodian archive",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "method": {
+  "name": "method",
+  "unit": "categorical",
+  "description": "EIS_H2Air or EIS_H2N2 (impedance spectroscopy), CV (cyclic voltammetry), LSV (linear sweep voltammetry), Limiting_Current_Measurements",
+  "provenance": "custodian folder name",
+  "dtype_observed": "str",
+  "n_null": 0
+ },
+ "rh_pct": {
+  "name": "rh_pct",
+  "unit": "percent",
+  "description": "relative humidity in the custodian's folder name, where it names one",
+  "provenance": "custodian folder name",
+  "dtype_observed": "float64",
+  "n_null": 1770
+ },
+ "set_point": {
+  "name": "set_point",
+  "unit": "text",
+  "description": "the set point in the custodian's folder name (for example 1000mAcm2 or 200mV), where it names one",
+  "provenance": "custodian folder name",
+  "dtype_observed": "str",
+  "n_null": 1770
+ },
+ "ageing_cycles": {
+  "name": "ageing_cycles",
+  "unit": "cycles",
+  "description": "accelerated-stress-test cycles in the custodian's folder name",
+  "provenance": "custodian folder name",
+  "dtype_observed": "int64",
+  "n_null": 0
+ },
+ "member_bytes": {
+  "name": "member_bytes",
+  "unit": "bytes",
+  "description": "uncompressed size of the file",
+  "provenance": "custodian archive",
+  "dtype_observed": "int64",
+  "n_null": 0
+ },
+ "member_crc32": {
+  "name": "member_crc32",
+  "unit": "hex",
+  "description": "CRC-32 of the file as the archive records it, to check an extracted copy",
+  "provenance": "custodian archive",
+  "dtype_observed": "str",
+  "n_null": 0
+ }
+}
